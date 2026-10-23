@@ -1,0 +1,9 @@
+.gradle/
+.idea/
+.tools/
+tmp/
+local.properties
+**/build/
+*.iml
+captures/
+output/

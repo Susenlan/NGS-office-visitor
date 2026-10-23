@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navy">#011A5C</color>
+    <color name="navy_green">#043F39</color>
+    <color name="blue">#549EE1</color>
+    <color name="pale_blue">#EDF9FE</color>
+    <color name="green">#08766C</color>
+    <color name="mint">#8CCEC7</color>
+    <color name="amber">#B66A00</color>
+    <color name="red">#B42318</color>
+    <color name="surface">#F7FBFD</color>
+    <color name="border">#E7E7E7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_secondary">#415779</color>
+</resources>

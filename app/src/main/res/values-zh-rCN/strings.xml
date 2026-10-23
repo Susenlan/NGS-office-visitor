@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NGS Visitor</string>
+    <string name="switch_language">切换语言</string>
+    <string name="refresh">刷新</string>
+    <string name="settings">设置</string>
+    <string name="loading_vouchers">正在读取访客码…</string>
+    <string name="filter_available">可用</string>
+    <string name="filter_active">使用中</string>
+    <string name="filter_unavailable">不可用</string>
+    <string name="syncing">正在与 UniFi 同步…</string>
+    <string name="synced_auto">已同步 · 30 秒后自动刷新</string>
+    <string name="sync_failed">同步失败：%1$s</string>
+    <string name="cannot_read_unifi">无法读取 UniFi，请检查设置</string>
+    <string name="certificate_untrusted">UDM 证书不受信任，请安装证书或填写 SHA-256 指纹</string>
+    <string name="error_no_sites">API 未返回任何 Site</string>
+    <string name="error_https_runtime">只允许 HTTPS 地址</string>
+    <string name="error_http">UniFi API 返回 HTTP %1$s</string>
+    <string name="error_certificate_mismatch">UDM 证书指纹不匹配</string>
+    <string name="summary">可用码 %1$d · 剩余名额 %2$d · 待连接 %3$d · 使用中 %4$d · 不可用 %5$d</string>
+
+    <string name="state_waiting">待连接</string>
+    <string name="state_unused">未启用</string>
+    <string name="state_active">使用中</string>
+    <string name="state_unavailable">不可用</string>
+    <string name="first_use_8h">首次使用后 8 小时</string>
+    <string name="expired">已到期</string>
+    <string name="remaining_time">剩余 %1$d:%2$02d</string>
+    <string name="remaining_slots">剩余 %1$d/%2$d</string>
+    <string name="cancel_reservation">取消预留</string>
+    <string name="issue_and_copy">发放并复制</string>
+    <string name="qr_code">二维码</string>
+    <string name="voucher_copied">访客码已复制</string>
+    <string name="qr_message">请在 NGS-Visitor 登录页面输入此码。二维码内容为纯数字访客码。</string>
+    <string name="close">关闭</string>
+    <string name="qr_error">无法生成二维码</string>
+
+    <string name="settings_title">连接 UniFi</string>
+    <string name="settings_intro">API Key 只加密保存在本机。App 仅调用读取 Voucher 的接口。</string>
+    <string name="api_root_label">API 根地址</string>
+    <string name="api_root_hint">https://192.168.1.1</string>
+    <string name="api_root_help">本地 UDM 可只填 https://UDM-IP；云连接器请粘贴包含 consoleId 和 /proxy/network/integration 的完整地址。</string>
+    <string name="site_id_label">Site ID（可留空自动发现）</string>
+    <string name="site_id_hint">留空即可</string>
+    <string name="api_key_label">API Key</string>
+    <string name="api_key_hint">由 IT 在本机填写</string>
+    <string name="api_key_saved_hint">API Key 已保存；留空表示保持不变</string>
+    <string name="fallback_limit_label">旧数据缺省人数</string>
+    <string name="fallback_limit_hint">5</string>
+    <string name="certificate_label">UDM 证书 SHA-256（可选）</string>
+    <string name="certificate_hint">例如 A1:B2:…</string>
+    <string name="certificate_help">仅当 UDM 使用自签名证书且安卓不信任时填写。请让 IT 从可信电脑核对证书指纹，不能随意接受未知证书。</string>
+    <string name="save_return">保存并返回</string>
+    <string name="error_https">地址必须以 https:// 开头</string>
+    <string name="error_api_key">请填写 API Key</string>
+    <string name="settings_saved">设置已保存</string>
+
+    <string name="admin_login_title">管理员登录</string>
+    <string name="admin_create_title">创建管理员</string>
+    <string name="admin_change_title">更改管理员</string>
+    <string name="admin_first_use_help">首次使用请创建管理员账号。以后进入设置必须验证此账号和密码；忘记后需要由 IT 清除 App 数据并重新配置。</string>
+    <string name="admin_login_help">请输入管理员账号和密码后进入设置。</string>
+    <string name="admin_username">管理员账号</string>
+    <string name="admin_username_hint">账号名称</string>
+    <string name="admin_password">密码</string>
+    <string name="admin_password_hint">至少 10 个字符</string>
+    <string name="admin_confirm_password">确认密码</string>
+    <string name="admin_sign_in">登录</string>
+    <string name="admin_create">创建并继续</string>
+    <string name="admin_update">保存新账号和密码</string>
+    <string name="admin_invalid">管理员账号或密码不正确</string>
+    <string name="admin_locked">尝试次数过多，请在 %1$d 秒后重试。</string>
+    <string name="admin_username_required">请输入管理员账号</string>
+    <string name="admin_password_policy">密码必须至少包含 10 个字符</string>
+    <string name="admin_password_mismatch">两次输入的密码不一致</string>
+    <string name="admin_created">管理员账号已创建</string>
+    <string name="admin_credentials_changed">管理员账号和密码已更新</string>
+    <string name="change_admin_credentials">更改管理员账号和密码</string>
+
+    <string name="security_section">设备保护</string>
+    <string name="privacy_mode">隐私模式</string>
+    <string name="privacy_help">禁止截图和最近任务预览，并自动清除剪贴板中的访客码。</string>
+    <string name="kiosk_mode">应用固定 / MDM 自助终端模式</string>
+    <string name="kiosk_help">启用后由 Android 启动应用固定；如果 MDM 已将本 App 加入设备所有者白名单，则进入完整锁定任务模式。</string>
+
+    <string name="network_timeout_sanitized">连接超时，请检查员工网络或防火墙规则。</string>
+    <string name="network_host_sanitized">无法找到 UniFi 主机。</string>
+    <string name="network_unreachable_sanitized">无法连接 UniFi，请检查员工网络或防火墙规则。</string>
+    <string name="network_tls_sanitized">安全连接失败，请联系 IT 检查证书。</string>
+    <string name="network_auth_sanitized">UniFi 拒绝了 API 凭据。</string>
+    <string name="network_endpoint_sanitized">UniFi API 接口不可用。</string>
+    <string name="network_generic_sanitized">UniFi 同步失败，请联系 IT 检查网络和设置。</string>
+</resources>
